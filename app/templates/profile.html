@@ -6,37 +6,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='/home/nacho/repos/info3180-lab2/app/static/css/app.css') }} ">
 
 </head>
-<!--
-<body>
-    <div class="profile-header"> 
-        <img src= "{{ url_for('static', filename = 'garnet.jpeg') }}" alt = "Profile Photo">
-    </div>
-    <div class="profile-header">
-        <div class="profile-info">
-            <h2> {{ name }} </h2>
-
-            <p> 
-                {{ user }} <br>
-                {{ location }}  <br>
-                {{ Date }}
-            </p>
-        </div>    
-    </div>
-
-    <div class="profile-stats">
-        <p> 
-            Hey there! I'm Mary, a girlie in STEM. I sure do love INFO3180, I sure hope I get bills!
-        </p>
-    </div>
-
-
-</body>
--->
 
 <div class="profile-card">
     <img class="profile-picture" src="{{ url_for('static', filename = 'garnet.jpeg') }}" alt="Profile Picture">
     <div class="name-headline">
-      <p> {{ name }} </p>
+      <h4> {{ name }} </h4>
     </div>
     <p class="location-date-joined"> {{ user }} </p>
     <p class="location-date-joined"> {{ location }} </p>
