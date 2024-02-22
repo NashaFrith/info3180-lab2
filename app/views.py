@@ -8,7 +8,7 @@ import datetime
 ###
 
 def format_date_joined():
-    date_joined = datetime.date(2018, 1, 8)
+    date_joined = datetime.date(2020, 9, 10)
     return date_joined.strftime("%B, %Y")
 
 
@@ -21,12 +21,12 @@ def home():
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Nasha Frith")
+    return render_template('about.html', name="Garnet Universe")
 
 @app.route('/profile')
 def profile():
     """Render the website's profile page """
-    return render_template('profile.html', name="Mary Jane", user="@MaryJane", location="Kingston, Jamaica", datey=format_date_joined())
+    return render_template('profile.html', name="Garnet Universe", user="@universe", location="Beach City", datey=format_date_joined())
 
 
 ###
