@@ -15,12 +15,12 @@ def home():
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+    return render_template('about.html', name="Nasha Frith")
 
 @app.route('/profile')
 def profile():
     """Render the website's profile page """
-    return render_template('profile.html')
+    return render_template('profile.html', name="Mary Jane", user="@MaryJane", location="Kingston, Jamaica", datey="Date")
 ###
 # The functions below should be applicable to all Flask apps.
 ###
